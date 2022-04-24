@@ -16,4 +16,8 @@ public class Dalmatycznyk extends Pies{
         super.informacjeOZwierzeciu();
         System.out.println("ilosc latek "+ iloscLatek );
     }
+
+//    public void je(){
+//        System.out.println("dalamatynczyk wlasnie zajada");
+//    }
 }
