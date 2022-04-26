@@ -8,7 +8,8 @@ public class MonthEnumTest {
 //             ) {
 //            System.out.println(month);
 //        }
-        while (true) {
+        boolean czyKontynuowac = false;
+        do {
             System.out.println("Podaj miesiac a powiem jaka to pora roku");
             Scanner scanner = new Scanner(System.in);
             String miesiac = scanner.nextLine();
@@ -43,7 +44,9 @@ public class MonthEnumTest {
                 default:
                     System.out.println("wprowadzono zla wartosc");
             }
-        }
+            System.out.println("Czy kontynuowac ?");
+            czyKontynuowac = scanner.nextBoolean();
+        } while (czyKontynuowac);
     }
 
 }
