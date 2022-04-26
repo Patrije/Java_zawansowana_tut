@@ -1,6 +1,6 @@
 package obiektowka.abstrakcyjna;
 
-public class Klasa {
+public class Klasa extends Object{
 
     protected String nazwa;
     protected String imie;
