@@ -4,5 +4,13 @@ public enum Month {
     JANUARY,
     FEBRUARY,
     MARCH,
-    APRIL
+    APRIL,
+    MAY,
+    JUNE,
+    JULY,
+    AUGUST,
+    SEPTEMBER,
+    OCTOBER,
+    NOVEMBER,
+    DECEMBER
 }
