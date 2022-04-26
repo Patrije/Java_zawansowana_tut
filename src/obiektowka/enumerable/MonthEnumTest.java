@@ -8,42 +8,42 @@ public class MonthEnumTest {
 //             ) {
 //            System.out.println(month);
 //        }
+        while (true) {
+            System.out.println("Podaj miesiac a powiem jaka to pora roku");
+            Scanner scanner = new Scanner(System.in);
+            String miesiac = scanner.nextLine();
+            Month month = Month.MAY;
+            try {
+                month = Month.valueOf(miesiac);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Zla nazwa miesiaca");
+            }
+            switch (month) {
 
-        System.out.println("Podaj miesiac a powiem jaka to pora roku");
-        Scanner scanner = new Scanner(System.in);
-        String miesiac = scanner.nextLine();
-        Month month = Month.MAY;
-        try {
-             month = Month.valueOf(miesiac);
-        } catch (IllegalArgumentException e){
-            System.out.println("Zla nazwa miesiaca");
-        }
-        switch (month){
-
-            case JANUARY:
-            case MARCH:
+                case JANUARY:
+                case MARCH:
                 case FEBRUARY:
-                System.out.println(Season.WINTER);
-                break;
-            case APRIL:
-            case  MAY:
+                    System.out.println(Season.WINTER);
+                    break;
+                case APRIL:
+                case MAY:
                 case JUNE:
-                System.out.println(Season.SPRING);
-                break;
-            case JULY:
-            case AUGUST:
-             case SEPTEMBER:
-                 System.out.println(Season.SUMMER);
-                 break;
-            case OCTOBER:
-            case NOVEMBER:
-            case DECEMBER:
-                System.out.println(Season.AUTUMN);
-                break;
-            default:
-                System.out.println("wprowadzono zla wartosc");
+                    System.out.println(Season.SPRING);
+                    break;
+                case JULY:
+                case AUGUST:
+                case SEPTEMBER:
+                    System.out.println(Season.SUMMER);
+                    break;
+                case OCTOBER:
+                case NOVEMBER:
+                case DECEMBER:
+                    System.out.println(Season.AUTUMN);
+                    break;
+                default:
+                    System.out.println("wprowadzono zla wartosc");
+            }
         }
     }
-
 
 }
