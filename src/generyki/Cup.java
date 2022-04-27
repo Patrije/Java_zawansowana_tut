@@ -12,4 +12,8 @@ public class Cup<T>{
         System.out.println("pije wlasnie "+ liquid);
     }
 
+    public <V> String stworzInfoOFilizance(V liquid) {
+        return liquid + " " +this.liquid.toString();
+    }
+
 }
