@@ -2,13 +2,15 @@ package generyki.fridge.zadanie;
 
 public class Fridge <T extends Food>{
 
-    private T food;
+    private T[] food;
 
-    public Fridge(T food) {
+    public Fridge(T[] food) {
         this.food = food;
     }
 
     public void jedz(){
-        food.eat();
+        for (Food foodItem: food) {
+            foodItem.eat();
+        }
     }
 }

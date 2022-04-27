@@ -7,7 +7,7 @@ public class FreidgeMain {
     public static void main(String[] args) {
         Bread bread = new Bread("chlebowy", LocalDate.of(2023,3,4));
         Milk milk = new Milk("gorzkie", LocalDate.of(2022,5,4));
-        Fridge<Food> breadFridge = new Fridge<>(milk);
+        Fridge<Food> breadFridge = new Fridge<>(new Food[]{bread, milk});
         breadFridge.jedz();
     }
 }
