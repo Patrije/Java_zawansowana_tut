@@ -12,7 +12,6 @@ public class ShoppingList <T extends ListItem>{
         double price =0;
         for (ListItem item:listItems) {
         price+=item.price;
-
         }
         return price;
     }
