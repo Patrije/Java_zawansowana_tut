@@ -8,9 +8,8 @@ public class Cup<T>{
         this.liquid = liquid;
     }
 
-
-
     public void wyswietlCoPije(){
         System.out.println("pije wlasnie "+ liquid);
     }
+
 }
