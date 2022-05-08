@@ -10,7 +10,11 @@ public class ClassExampleMain {
         InterfejsFunkcyjnyExample classExample = new ClassExampleDwa();
         classExample.method(34);
         classExample.noweMetoda();
+        InterfejsFunkcyjnyExample interfejsFunkcyjnyExample = number -> {
+            System.out.println(number);
+        };
 
+        interfejsFunkcyjnyExample.method(5);
         InterfejsFunkcyjnyExample interfejsExample = (zmienna) -> System.out.println(zmienna);
         InterfejsFunkcyjnyExample interfejsFunkcyjnyExampld = number -> System.out.println(2 + 4);
         interfejsExample.method(123);
